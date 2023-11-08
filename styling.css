@@ -1,0 +1,145 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle, #fff, #ccc);
+     background: -webkit-radial-gradient(circle, #fff, #ccc);
+     background: -o-radial-gradient(circle, #fff, #ccc);
+     background: -moz-radial-gradient(circle, #fff, #ccc);
+}
+#container{
+    height: 600px;
+    width: 750px;
+    background: #DD2E;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #f05d2f;
+    position: relative;
+}
+#score{
+    background-color: royalblue;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    left: 700px;
+    box-shadow: 0px 3px 3px ;
+    
+}
+#correct{
+    position: absolute;
+    left: 260px;
+    background-color: green;
+    color: white;
+    padding: 11px;
+    display: none;
+    
+}
+#wrong{
+    position: absolute;
+    left: 260px;
+    background-color: red;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+#fruitcontainer{
+    width: 650px;
+    height: 400px;
+    margin: 50px auto 10px auto;
+    background-color: white;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive,sans-serif;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+#instruction{
+    height: 50px;
+    width: 450px;
+    background-color: violet;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 4px 4px white;
+}
+#choices{
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+}
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.28s;
+}
+.box:hover, #startreset:hover{
+    background-color: mediumpurple;
+    color: white;
+    box-shadow: 0px 4px #6b53d3;
+}
+.box:active{
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    top: 4px;
+}
+#box4{
+    margin-right: 0;
+}
+#startreset{
+     width: 80px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+#trialsleft{
+    width: 80px;
+    background-color: royalblue;
+    padding: 10px;
+    position: absolute;
+    border-radius: 4px;
+    box-shadow: rgba(0,0,0,0.2);
+    display: none;
+}
+#gameover{
+    height: 200px;
+    width: 500px;
+    background: linear-gradient(#F3CA6B,#F3706C);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 145px;
+    z-index: 2;
+    display: none;
+}
+#credit{
+    background-color: moccasin;
+    color: black;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 13px;
+    text-align: left;
+}
+.life{
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+}
+.fruit{
+    display: none;
+    position: absolute;
+}
